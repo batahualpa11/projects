@@ -11,6 +11,8 @@ int main()
     cout << "Enter account number: ";
     cin >> accountNumber;
 
+    cout << "testing" << endl;
+
 
     while (accountNumber > 0)
     {
