@@ -11,8 +11,6 @@ int main()
     cout << "Enter account number: ";
     cin >> accountNumber;
 
-    cout << "testing 123" << endl;
-
 
     while (accountNumber > 0)
     {
@@ -30,18 +28,23 @@ int main()
 
         cout << '\t' << endl;
 
+        cout << "-------------------------" << endl;
+
         // Calculate new balance
         newBalance = beginningBalance + totalCharges - totalCredits;
 
         // Determine if credit limit is exceeded
         if (newBalance > creditLimit)
-
         {
             cout << "Account number: " << accountNumber << endl;
             cout << "Credit limit: " << creditLimit << endl;
             cout << "New balance: " << newBalance << endl;
+            cout << "-------------------------" << endl;
+
+
             cout << '\t' << endl;
             cout << "Credit Limit Exceeded!!!" << endl;
+            cout << "-------------------------" << endl;
             cout << '\t' << endl;
 
             return 0;
